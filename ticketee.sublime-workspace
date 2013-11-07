@@ -7,15 +7,48 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/controllers/tickets_controller.rb",
+			"settings":
+			{
+				"buffer_size": 757,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/tickets/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 100,
+				"line_ending": "Windows",
+				"name": "<div id='ticket'>"
+			}
+		},
+		{
+			"file": "app/models/ticket.rb",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/creating_tickets_spec.rb",
+			"settings":
+			{
+				"buffer_size": 1066,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -35,21 +68,46 @@
 	},
 	"file_history":
 	[
+		"/X/RoR/ticketee/spec/controllers/projects_controller_spec.rb",
+		"/X/RoR/ticketee/app/helpers/application_helper.rb",
+		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
+		"/X/RoR/ticketee/app/views/projects/show.html.erb",
+		"/X/RoR/ticketee/config/routes.rb",
+		"/X/RoR/ticketee/app/controllers/tickets_controller.rb",
+		"/X/RoR/ticketee/app/models/project.rb",
+		"/X/RoR/ticketee/app/views/tickets/new.html.erb",
+		"/X/RoR/ticketee/app/views/tickets/_form.html.erb",
+		"/X/RoR/ticketee/spec/features/creating_tickets_spec.rb",
 		"/X/RoR/ticketee/app/controllers/projects_controller.rb",
-		"/X/RoR/ticketee/app/views/projects/index.html.erb",
-		"/X/RoR/ticketee/app/controllers/application_controller.rb",
+		"/X/RoR/ticketee/config/environments/production.rb",
+		"/X/RoR/ticketee/spec/features/deleting_projects_spec.rb",
+		"/X/RoR/ticketee/spec/features/editing_projects_spec.rb",
 		"/X/RoR/ticketee/app/views/projects/new.html.erb",
-		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/X/RoR/ticketee/app/views/projects/edit.html.erb",
+		"/X/RoR/ticketee/app/views/projects/_form.html.erb",
+		"/X/RoR/ticketee/spec/features/viewing_projects_spec.rb",
+		"/X/RoR/ticketee/Gemfile",
+		"/X/RoR/ticketee/spec/factories/project_factory.rb",
+		"/X/RoR/ticketee/app/views/projects/index.html.erb",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/P/c@bs/Kunden_Partner/Gruner + Jahr/2013-09-26 Telefonnotiz HellmuthYasui.txt",
+		"/X/RoR/ticketee/spec/features/creating_projects_spec.rb",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/X/RoR/ticketee/app/controllers/application_controller.rb",
+		"/X/RoR/ticketee/ticketee.sublime-project"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"X:\\RoR\\ticketee"
 		]
 	},
 	"find_state":
@@ -57,8 +115,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"puts",
+			"reindent",
+			"re-indent",
+			"indent",
+			"tab"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -74,18 +137,130 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/tickets_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/tickets/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div id='ticket'>",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/ticket.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/features/creating_tickets_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1059,
+								1059
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -113,7 +288,7 @@
 	"project": "ticketee.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
