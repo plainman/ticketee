@@ -33,6 +33,31 @@
 			}
 		},
 		{
+			"file": "spec/features/viewing_tickets_spec.rb",
+			"settings":
+			{
+				"buffer_size": 910,
+				"line_ending": "Windows",
+				"name": "require 'spec_helper'"
+			}
+		},
+		{
+			"file": "app/views/projects/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 501,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/project.rb",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "spec/features/creating_tickets_spec.rb",
 			"settings":
 			{
@@ -68,6 +93,7 @@
 	},
 	"file_history":
 	[
+		"/X/RoR/ticketee/spec/factories/ticket_factory.rb",
 		"/X/RoR/ticketee/spec/controllers/projects_controller_spec.rb",
 		"/X/RoR/ticketee/app/helpers/application_helper.rb",
 		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
@@ -137,7 +163,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -224,6 +250,88 @@
 				},
 				{
 					"buffer": 3,
+					"file": "spec/features/viewing_tickets_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								910,
+								910
+							]
+						],
+						"settings":
+						{
+							"auto_name": "require 'spec_helper'",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/projects/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/project.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "spec/features/creating_tickets_spec.rb",
 					"semi_transient": false,
 					"settings":
