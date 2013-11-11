@@ -1,4 +1,5 @@
 require 'spec_helper'
+
 feature "Profile page" do
   scenario "viewing" do
     user = FactoryGirl.create(:user)
@@ -13,6 +14,7 @@ feature "Editing Users" do
     visit user_path(user)
     click_link "Edit Profile"
     fill_in "Username", with: "new_username"
+    fill_in "Email", with: "new_mail@world.de"
     click_button "Update Profile"
     expect(page).to have_content("Profile has been updated.")
   end
