@@ -3,139 +3,36 @@
 	{
 		"selected_items":
 		[
+			[
+				"up",
+				"update"
+			],
+			[
+				"ticket",
+				"ticket2"
+			],
+			[
+				"pro",
+				"projects_path"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "require 'spec_helper'\nfeature \"Editing tickets\" do\n  let!(:project) { FactoryGirl.create(:project) }\n  let!(:ticket) { FactoryGirl.create(:ticket, project: project) }\n  before do\n    visit '/'\n    click_link project.name\n    click_link ticket.title\n    click_link \"Edit Ticket\"\n  end\n  scenario \"Updating a ticket\" do\n    fill_in \"Title\", with: \"Make it really shiny!\"\n    click_button \"Update Ticket\"\n    expect(page).to have_content \"Ticket has been updated.\"\n    within(\"#ticket h2\") do\n      expect(page).to have_content(\"Make it really shiny!\")\n    end\n    expect(page).to_not have_content ticket.title\n  end\n  scenario \"Updating a ticket with invalid information\" do\n    fill_in \"Title\", with: \"\"\n    click_button \"Update Ticket\"\n    expect(page).to have_content(\"Ticket has not been updated.\")\n  end\nend",
-			"file": "spec/features/editing_tickets_spec.rb",
-			"file_size": 760,
-			"file_write_time": 130283849843560926,
+			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 810,
-				"line_ending": "Windows",
-				"name": "require 'spec_helper'"
-			}
-		},
-		{
-			"file": "app/views/tickets/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 300,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/tickets_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1127,
+				"buffer_size": 510,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/projects/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 536,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 1321,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/features/signing_up_spec.rb",
-			"settings":
-			{
-				"buffer_size": 366,
-				"line_ending": "Windows",
-				"name": "require 'spec_helper'"
 			}
 		},
 		{
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 568,
+				"buffer_size": 627,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1712,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 38,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 673,
-				"line_ending": "Windows",
-				"name": "<%= form_for @user do |f| %>"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 425,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/models/user_spec.rb",
-			"settings":
-			{
-				"buffer_size": 1004,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/user.rb",
-			"settings":
-			{
-				"buffer_size": 58,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "require 'spec_helper'\nfeature 'Deleting tickets' do\n  let!(:project) { FactoryGirl.create(:project) }\n  let!(:ticket) { FactoryGirl.create(:ticket, project: project) }\n  before do\n    visit '/'\n    click_link project.name\n    click_link ticket.title\n  end\n  scenario \"Deleting a ticket\" do\n    click_link \"Delete Ticket\"\n    expect(page).to have_content(\"Ticket has been deleted.\")\n    expect(page.current_url).to eq(project_url(project))\n  end\nend",
-			"file": "spec/features/deleting_tickets_spec.rb",
-			"file_size": 426,
-			"file_write_time": 130283882935718162,
-			"settings":
-			{
-				"buffer_size": 448,
-				"line_ending": "Windows",
-				"name": "require 'spec_helper'"
-			}
-		},
-		{
-			"file": "app/views/tickets/edit.html.erb",
-			"settings":
-			{
-				"buffer_size": 70,
-				"line_ending": "Windows",
-				"name": "<h2>Editing a ticket in <%= @project.name %></h2>"
 			}
 		}
 	],
@@ -166,39 +63,57 @@
 	},
 	"file_history":
 	[
-		"/C/RoR/rubystack-2.0.0-5/ruby/lib/ruby/gems/2.0.0/gems/bcrypt-ruby-3.0.1-x86-mingw32/README.md",
-		"/X/RoR/ticketee/app/controllers/tickets_controller.rb",
+		"/X/RoR/ticketee/app/views/projects/edit.html.erb",
+		"/X/RoR/ticketee/app/views/projects/new.html.erb",
+		"/X/RoR/ticketee/app/controllers/projects_controller.rb",
+		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/X/RoR/ticketee/app/views/tickets/show.html.erb",
-		"/X/RoR/ticketee/app/models/ticket.rb",
+		"/X/RoR/ticketee/spec/factories/user_factory.rb",
 		"/X/RoR/ticketee/spec/features/viewing_tickets_spec.rb",
-		"/X/RoR/ticketee/app/views/projects/show.html.erb",
-		"/X/RoR/ticketee/app/models/project.rb",
+		"/X/RoR/ticketee/spec/features/editing_tickets_spec.rb",
+		"/X/RoR/ticketee/app/controllers/users_controller.rb",
+		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/X/RoR/ticketee/app/controllers/application_controller.rb",
+		"/X/RoR/ticketee/app/controllers/sessions_controller.rb",
+		"/X/RoR/ticketee/app/views/sessions/new.html.erb",
+		"/X/RoR/ticketee/app/views/users/index.html.erb",
+		"/X/RoR/ticketee/spec/features/deleting_tickets_spec.rb",
+		"/X/RoR/ticketee/spec/support/authentication_helpers.rb",
+		"/X/RoR/ticketee/app/views/users/show.html.erb",
+		"/X/RoR/ticketee/spec/features/user_profile_spec.rb",
+		"/X/RoR/ticketee/spec/features/sign_in_spec.rb",
+		"/X/RoR/ticketee/config/routes.rb",
 		"/X/RoR/ticketee/spec/features/creating_tickets_spec.rb",
+		"/X/RoR/ticketee/app/controllers/tickets_controller.rb",
+		"/X/RoR/ticketee/app/views/users/_form.html.erb",
+		"/X/RoR/ticketee/app/models/ticket.rb",
+		"/X/RoR/ticketee/app/views/users/edit.html.erb",
+		"/X/RoR/ticketee/app/views/projects/show.html.erb",
+		"/X/RoR/ticketee/Gemfile",
+		"/X/RoR/ticketee/spec/features/signing_up_spec.rb",
+		"/X/RoR/ticketee/app/views/users/new.html.erb",
+		"/X/RoR/ticketee/spec/models/user_spec.rb",
+		"/X/RoR/ticketee/app/models/user.rb",
+		"/X/RoR/ticketee/app/views/tickets/edit.html.erb",
+		"/C/RoR/rubystack-2.0.0-5/ruby/lib/ruby/gems/2.0.0/gems/bcrypt-ruby-3.0.1-x86-mingw32/README.md",
+		"/X/RoR/ticketee/app/models/project.rb",
 		"/X/RoR/ticketee/spec/factories/ticket_factory.rb",
 		"/X/RoR/ticketee/spec/controllers/projects_controller_spec.rb",
 		"/X/RoR/ticketee/app/helpers/application_helper.rb",
-		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
-		"/X/RoR/ticketee/config/routes.rb",
 		"/X/RoR/ticketee/app/views/tickets/new.html.erb",
 		"/X/RoR/ticketee/app/views/tickets/_form.html.erb",
-		"/X/RoR/ticketee/app/controllers/projects_controller.rb",
 		"/X/RoR/ticketee/config/environments/production.rb",
 		"/X/RoR/ticketee/spec/features/deleting_projects_spec.rb",
 		"/X/RoR/ticketee/spec/features/editing_projects_spec.rb",
-		"/X/RoR/ticketee/app/views/projects/new.html.erb",
-		"/X/RoR/ticketee/app/views/projects/edit.html.erb",
 		"/X/RoR/ticketee/app/views/projects/_form.html.erb",
 		"/X/RoR/ticketee/spec/features/viewing_projects_spec.rb",
-		"/X/RoR/ticketee/Gemfile",
 		"/X/RoR/ticketee/spec/factories/project_factory.rb",
 		"/X/RoR/ticketee/app/views/projects/index.html.erb",
-		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/P/c@bs/Kunden_Partner/Gruner + Jahr/2013-09-26 Telefonnotiz HellmuthYasui.txt",
 		"/X/RoR/ticketee/spec/features/creating_projects_spec.rb",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/X/RoR/ticketee/app/controllers/application_controller.rb",
 		"/X/RoR/ticketee/ticketee.sublime-project"
 	],
 	"find":
@@ -240,154 +155,16 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "spec/features/editing_tickets_spec.rb",
+					"file": "app/controllers/application_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								810,
-								810
-							]
-						],
-						"settings":
-						{
-							"auto_name": "require 'spec_helper'",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/tickets/show.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 300,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								182,
-								182
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/tickets_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1127,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1070,
-								1070
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 87.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/projects/show.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								103,
-								103
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1321,
-								1321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 428.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "spec/features/signing_up_spec.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 366,
+						"buffer_size": 510,
 						"regions":
 						{
 						},
@@ -400,7 +177,6 @@
 						],
 						"settings":
 						{
-							"auto_name": "require 'spec_helper'",
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -410,247 +186,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 1,
 					"file": "app/views/layouts/application.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 568,
+						"buffer_size": 627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								417,
-								417
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "config/routes.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1712,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								41,
-								41
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/users/new.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 38,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/views/users/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								361,
-								361
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<%= form_for @user do |f| %>",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/controllers/users_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								420,
-								420
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "spec/models/user_spec.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1004,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								275,
-								275
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 12.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/models/user.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 58,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								53,
-								53
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "spec/features/deleting_tickets_spec.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 448,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								448,
-								448
-							]
-						],
-						"settings":
-						{
-							"auto_name": "require 'spec_helper'",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/views/tickets/edit.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 70,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<h2>Editing a ticket in <%= @project.name %></h2>",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -716,11 +271,11 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"settings":
 	{
