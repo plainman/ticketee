@@ -19,22 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 510,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 627,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -63,23 +47,33 @@
 	},
 	"file_history":
 	[
+		"/X/RoR/ticketee/spec/features/creating_projects_spec.rb",
+		"/X/RoR/ticketee/spec/factories/user_factory.rb",
+		"/X/RoR/ticketee/app/views/projects/show.html.erb",
+		"/X/RoR/ticketee/db/migrate/20131112164123_add_admin_to_users.rb",
+		"/X/RoR/ticketee/spec/controllers/projects_controller_spec.rb",
+		"/X/RoR/ticketee/spec/features/deleting_projects_spec.rb",
+		"/X/RoR/ticketee/spec/features/editing_projects_spec.rb",
+		"/X/RoR/ticketee/spec/features/hidden_links_spec.rb",
+		"/X/RoR/ticketee/spec/support/capybara_helpers.rb",
+		"/X/RoR/ticketee/app/views/projects/index.html.erb",
+		"/X/RoR/ticketee/app/helpers/application_helper.rb",
+		"/X/RoR/ticketee/app/controllers/projects_controller.rb",
+		"/X/RoR/ticketee/spec/support/authentication_helpers.rb",
+		"/X/RoR/ticketee/app/controllers/application_controller.rb",
+		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
 		"/X/RoR/ticketee/app/views/projects/edit.html.erb",
 		"/X/RoR/ticketee/app/views/projects/new.html.erb",
-		"/X/RoR/ticketee/app/controllers/projects_controller.rb",
-		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/X/RoR/ticketee/app/views/tickets/show.html.erb",
-		"/X/RoR/ticketee/spec/factories/user_factory.rb",
 		"/X/RoR/ticketee/spec/features/viewing_tickets_spec.rb",
 		"/X/RoR/ticketee/spec/features/editing_tickets_spec.rb",
 		"/X/RoR/ticketee/app/controllers/users_controller.rb",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/X/RoR/ticketee/app/controllers/application_controller.rb",
 		"/X/RoR/ticketee/app/controllers/sessions_controller.rb",
 		"/X/RoR/ticketee/app/views/sessions/new.html.erb",
 		"/X/RoR/ticketee/app/views/users/index.html.erb",
 		"/X/RoR/ticketee/spec/features/deleting_tickets_spec.rb",
-		"/X/RoR/ticketee/spec/support/authentication_helpers.rb",
 		"/X/RoR/ticketee/app/views/users/show.html.erb",
 		"/X/RoR/ticketee/spec/features/user_profile_spec.rb",
 		"/X/RoR/ticketee/spec/features/sign_in_spec.rb",
@@ -89,7 +83,6 @@
 		"/X/RoR/ticketee/app/views/users/_form.html.erb",
 		"/X/RoR/ticketee/app/models/ticket.rb",
 		"/X/RoR/ticketee/app/views/users/edit.html.erb",
-		"/X/RoR/ticketee/app/views/projects/show.html.erb",
 		"/X/RoR/ticketee/Gemfile",
 		"/X/RoR/ticketee/spec/features/signing_up_spec.rb",
 		"/X/RoR/ticketee/app/views/users/new.html.erb",
@@ -99,19 +92,13 @@
 		"/C/RoR/rubystack-2.0.0-5/ruby/lib/ruby/gems/2.0.0/gems/bcrypt-ruby-3.0.1-x86-mingw32/README.md",
 		"/X/RoR/ticketee/app/models/project.rb",
 		"/X/RoR/ticketee/spec/factories/ticket_factory.rb",
-		"/X/RoR/ticketee/spec/controllers/projects_controller_spec.rb",
-		"/X/RoR/ticketee/app/helpers/application_helper.rb",
 		"/X/RoR/ticketee/app/views/tickets/new.html.erb",
 		"/X/RoR/ticketee/app/views/tickets/_form.html.erb",
 		"/X/RoR/ticketee/config/environments/production.rb",
-		"/X/RoR/ticketee/spec/features/deleting_projects_spec.rb",
-		"/X/RoR/ticketee/spec/features/editing_projects_spec.rb",
 		"/X/RoR/ticketee/app/views/projects/_form.html.erb",
 		"/X/RoR/ticketee/spec/features/viewing_projects_spec.rb",
 		"/X/RoR/ticketee/spec/factories/project_factory.rb",
-		"/X/RoR/ticketee/app/views/projects/index.html.erb",
 		"/P/c@bs/Kunden_Partner/Gruner + Jahr/2013-09-26 Telefonnotiz HellmuthYasui.txt",
-		"/X/RoR/ticketee/spec/features/creating_projects_spec.rb",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Default.DEV-Lap-011/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/X/RoR/ticketee/ticketee.sublime-project"
@@ -155,64 +142,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 627,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -284,7 +215,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 264.0,
+	"side_bar_width": 261.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
