@@ -1,8 +1,8 @@
 require 'spec_helper'
 feature "Viewing tickets" do
   before do
-    textmate_2 = FactoryGirl.create(:project, name: "TextMate 2")
     user = FactoryGirl.create(:user)
+    textmate_2 = FactoryGirl.create(:project, name: "TextMate 2")
     define_permission!(user, "view", textmate_2)
     ticket1 = FactoryGirl.create(:ticket,
       project: textmate_2,
