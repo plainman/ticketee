@@ -1,17 +1,15 @@
 require 'spec_helper'
-
-feature "Profile page" do
-  scenario "viewing" do
-    user = FactoryGirl.create(:user)
+feature "User profiles" do
+  let!(:user) { FactoryGirl.create(:user) }
+  before do
+    sign_in_as!(user)
     visit user_path(user)
+  end
+  scenario "Viewing" do
     expect(page).to have_content(user.name)
     expect(page).to have_content(user.email)
   end
-end
-feature "Editing Users" do
-  scenario "Updating a project" do
-    user = FactoryGirl.create(:user)
-    visit user_path(user)
+  scenario "Updating" do
     click_link "Edit Profile"
     fill_in "Username", with: "new_username"
     fill_in "Email", with: "new_mail@world.de"
