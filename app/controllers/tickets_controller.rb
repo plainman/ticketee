@@ -1,6 +1,5 @@
 class TicketsController < ApplicationController
 
-  #before_action :authorize_admin!
   before_action :set_project
   before_action :set_ticket, only: [:show, :edit, :update, :destroy]
   before_action :authorize_create!, only: [:new, :create]
@@ -8,7 +7,8 @@ class TicketsController < ApplicationController
   before_action :authorize_delete!, only: :destroy
 
   def new
-    @ticket = @project.tickets.build    #same as Ticket.new(project_id: @project.id)
+    @ticket = @project.tickets.build #same as Ticket.new(project_id: @project.id)
+    3.times { @ticket.assets.build }
   end
   def create
     @ticket = @project.tickets.build(ticket_params)
@@ -39,7 +39,7 @@ class TicketsController < ApplicationController
   end
   private
   def ticket_params
-    params.require(:ticket).permit(:title, :description, :asset)
+    params.require(:ticket).permit(:title, :description, assets_attributes: [:asset])
   end
   def set_project
     @project = Project.for(current_user).find(params[:project_id])
