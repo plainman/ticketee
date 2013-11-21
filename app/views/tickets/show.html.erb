@@ -22,4 +22,12 @@
     <% end %>
   </div>
   <% end %>
+  <% if @ticket.comments.exists? %>
+  <h3>Comments</h3>
+  <div id='comments'>
+    <%= render @ticket.comments %>
+  </div>
+  <% end %>
+  <h3>New comment</h3>
+  <%= render "comments/form" %>
 </div>
