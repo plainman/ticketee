@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-  #before_filter :authenticate_user!
   before_action :set_ticket
 
   def create
@@ -10,7 +9,7 @@ class CommentsController < ApplicationController
       redirect_to [@ticket.project, @ticket]
     else
       flash[:alert] = "Comment has not been created."
-      render :template => "tickets/show"
+      render template: "tickets/show"
     end
   end
 
