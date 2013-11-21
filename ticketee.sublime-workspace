@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ti",
+				"ticket"
+			],
+			[
 				"up",
 				"update"
 			],
@@ -19,21 +23,71 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "spec/features/creating_tickets_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2520,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/tickets_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/tickets/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/tickets/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 392.0
+		"width": 400.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
+			"install package",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
 		]
 	},
 	"distraction_free":
@@ -47,28 +101,40 @@
 	},
 	"file_history":
 	[
-		"/X/RoR/ticketee/spec/features/creating_tickets_spec.rb",
+		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/spec/features/creating_tickets_spec.rb",
+		"/X/RoR/ticketee/app/assets/javascripts/tickets.js.coffee",
+		"/X/RoR/ticketee/app/controllers/files_controller.rb",
 		"/X/RoR/ticketee/app/views/tickets/_form.html.erb",
-		"/X/RoR/ticketee/app/models/ticket.rb",
-		"/X/RoR/ticketee/app/models/asset.rb",
+		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
+		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/views/tickets/_form.html.erb",
+		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/views/files/_form.html.erb",
+		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/assets/javascripts/tickets.js.coffee",
+		"/X/RoR/ticketee/app/views/files/_form.html.erb",
+		"/X/RoR/ticketee/Gemfile",
+		"/X/RoR/ticketee/app/assets/javascripts/application.js",
+		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/controllers/files_controller.rb",
+		"/X/RoR/ticketee/spec/controllers/files_controller_spec.rb",
+		"/X/RoR/ticketee/spec/features/creating_tickets_spec.rb",
+		"/X/RoR/ticketee/spec/support/database_cleaning.rb",
+		"/X/RoR/ticketee/spec/spec_helper.rb",
 		"/X/RoR/ticketee/app/controllers/tickets_controller.rb",
+		"/X/RoR/ticketee/config/routes.rb",
+		"/X/RoR/ticketee/app/models/asset.rb",
+		"/X/RoR/ticketee/app/uploaders/asset_uploader.rb",
+		"/X/RoR/ticketee/app/views/tickets/show.html.erb",
+		"/X/RoR/ticketee/.gitignore",
+		"/X/RoR/ticketee/app/models/ticket.rb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/models/asset.rb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/models/ticket.rb",
-		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/views/tickets/_form.html.erb",
-		"/X/RoR/ticketee/app/views/tickets/show.html.erb",
 		"/X/RoR/ticketee/spec/fixtures/gradient.txt",
 		"/X/RoR/ticketee/db/migrate/20131118151439_create_assets.rb",
-		"/X/RoR/ticketee/Gemfile",
 		"/X/RoR/ticketee/spec/fixtures/spin.txt",
 		"/X/RoR/ticketee/spec/fixtures/speed.txt",
-		"/X/RoR/ticketee/.gitignore",
 		"/X/RoR/ticketee/app/helpers/admin/permissions_helper.rb",
 		"/X/RoR/ticketee/spec/features/seeds_spec.rb",
 		"/X/RoR/ticketee/db/seeds.rb",
 		"/X/RoR/ticketee/spec/features/admin/assigning_permissions_spec.rb",
-		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
 		"/X/RoR/ticketee/app/controllers/admin/permissions_controller.rb",
-		"/X/RoR/ticketee/config/routes.rb",
 		"/X/RoR/ticketee/app/controllers/sessions_controller.rb",
 		"/X/RoR/ticketee/spec/support/authentication_helpers.rb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/config/routes.rb",
@@ -157,6 +223,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"turbolinks",
 			"You must be an admin",
 			"puts",
 			"reindent",
@@ -180,8 +247,125 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "spec/features/creating_tickets_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2058,
+								2058
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/tickets_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/tickets/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/tickets/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

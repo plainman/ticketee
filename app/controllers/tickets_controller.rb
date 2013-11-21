@@ -8,7 +8,7 @@ class TicketsController < ApplicationController
 
   def new
     @ticket = @project.tickets.build #same as Ticket.new(project_id: @project.id)
-    3.times { @ticket.assets.build }
+    @ticket.assets.build
   end
   def create
     @ticket = @project.tickets.build(ticket_params)

@@ -7,6 +7,13 @@ module CapybaraHelpers
     expect(page).to(have_css("a", :text => text),
       "Expected to see the #{text.inspect} link, but did not.")
   end
+
+  # capybara webdriver does need backslashes in path on windows
+  def build_compatible_fixtures_path(file)
+    filepath=Rails.root.to_s+"/spec/fixtures/"+file
+    filepath.gsub!(/\//, "\\") if filepath.match(/^[A-Z]:\//) 
+  end
+  
 end
 RSpec.configure do |config|
   config.include CapybaraHelpers, :type => :feature
