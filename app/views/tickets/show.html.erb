@@ -1,6 +1,17 @@
 <div id='ticket'>
-  <h2><%= @ticket.title %></h2>
+<% if @comment.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  <ul>
+    <% @comment.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+ <h2><%= @ticket.title %></h2>
   <span id='author'><small>Created by <%= @ticket.user.email %></small></span>
+  <%= render @ticket.state if @ticket.state %>
   <%= authorized?("edit tickets", @project) do %>
   <%= link_to "Edit Ticket", [:edit, @project, @ticket] %>
   <% end %>
@@ -25,9 +36,9 @@
   <% if @ticket.comments.exists? %>
   <h3>Comments</h3>
   <div id='comments'>
-    <%= render @ticket.comments %>
+    <%= render partial: @ticket.comments %>
   </div>
   <% end %>
   <h3>New comment</h3>
-  <%= render "comments/form" %>
+  <%= render partial: "comments/form" %>
 </div>

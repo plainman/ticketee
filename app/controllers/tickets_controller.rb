@@ -18,11 +18,12 @@ class TicketsController < ApplicationController
       redirect_to [@project, @ticket]
     else
       flash[:alert] = "Ticket has not been created."
-      render "new"
+      render action: "new"
     end
   end
   def show
     @comment = @ticket.comments.build
+    @states = State.all
   end
   def edit
   end
