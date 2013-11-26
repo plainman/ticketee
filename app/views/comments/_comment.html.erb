@@ -1,4 +1,7 @@
 <%= div_for(comment) do %>
+<% if comment.id != nil %> <!-- that's because otherwise the newly comment which might by filled&created is displayed too -->
 <h4><%= comment.user %></h4>
+State: <%= state_for(comment) %>
 <%= simple_format(comment.text) %>
+<% end %>
 <% end %>
