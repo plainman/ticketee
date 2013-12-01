@@ -18,6 +18,11 @@ Ticketee::Application.routes.draw do
       resources :permissions
       put "permissions", to: "permissions#set", as: "set_permissions"
     end
+    resources :states do
+      member do
+        get :make_default
+      end
+    end
   end
 
   get "/signin", to: "sessions#new"

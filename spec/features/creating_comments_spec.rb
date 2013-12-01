@@ -6,7 +6,6 @@ feature "Creating comments" do
   let!(:ticket) { FactoryGirl.create(:ticket, project: project, user: user) }
   let!(:state) { FactoryGirl.create(:state, name: "Open") }
   before do
-    #load Rails.root + "db/seeds.rb"
     define_permission!(user, "view", project)
     sign_in_as!(user)
     visit '/'
