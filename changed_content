@@ -1,0 +1,9 @@
+Chapter 11.1
+- extend ticket_params instead of attr_accessible lieke this
+  def ticket_params
+    params.require(:ticket).permit(:title, :description, :tag_names, assets_attributes: [:asset])
+  end
+- typo in test scenario, use "Tag names" instead of "Tags":
+  fill_in "Tag names", :with => "browser visual"
+- use non-deprecated method in ticket model "associate_tags"-method:
+  self.tags << Tag.find_or_create_by(name: name)

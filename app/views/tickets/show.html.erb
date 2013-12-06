@@ -19,6 +19,7 @@
   <%= link_to "Delete Ticket", [@project, @ticket], method: :delete,
   data: { confirm: "Are you sure you want to delete this ticket?"} %>
   <% end %>
+  <div id='tags'><%= render @ticket.tags %></div>
   <%= simple_format(@ticket.description) %>
   <% if @ticket.assets.present? %>
   <h3>Attached Files</h3>
