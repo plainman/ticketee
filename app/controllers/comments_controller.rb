@@ -20,6 +20,9 @@ class CommentsController < ApplicationController
     @ticket = Ticket.find(params[:ticket_id])
   end
   def comment_params
+    if cannot?(:"change states", @ticket.project)
+      params[:comment].delete(:state_id)
+    end
     params.require(:comment).permit(:text, :state_id)
   end
 

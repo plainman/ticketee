@@ -24,19 +24,35 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/application.html.erb",
+			"file": "spec/features/creating_comments_spec.rb",
 			"settings":
 			{
-				"buffer_size": 916,
-				"line_ending": "Unix"
+				"buffer_size": 1806,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/application_controller.rb",
+			"file": "spec/factories/state_factory.rb",
 			"settings":
 			{
-				"buffer_size": 747,
-				"line_ending": "Unix"
+				"buffer_size": 84,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "spec/factories/project_factory.rb",
+			"settings":
+			{
+				"buffer_size": 80,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "spec/features/admin/assigning_permissions_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2557,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -93,32 +109,42 @@
 	},
 	"file_history":
 	[
+		"/X/RoR/ticketee/spec/controllers/comments_controller_spec.rb",
+		"/X/RoR/ticketee/app/controllers/comments_controller.rb",
+		"/X/RoR/ticketee/app/views/comments/_form.html.erb",
+		"/X/RoR/ticketee/spec/features/admin/assigning_permissions_spec.rb",
+		"/X/RoR/ticketee/app/helpers/admin/permissions_helper.rb",
+		"/X/RoR/ticketee/spec/features/creating_comments_spec.rb",
+		"/X/RoR/ticketee/spec/features/admin/creating_states_spec.rb",
+		"/X/RoR/ticketee/spec/features/admin/managing_states_spec.rb",
+		"/X/RoR/ticketee/spec/support/capybara_helpers.rb",
+		"/X/RoR/ticketee/app/views/admin/states/index.html.erb",
+		"/X/RoR/ticketee/config/routes.rb",
+		"/X/RoR/ticketee/app/controllers/admin/states_controller.rb",
+		"/X/RoR/ticketee/app/models/state.rb",
+		"/X/RoR/ticketee/db/seeds.rb",
+		"/X/RoR/ticketee/app/views/admin/states/_form.html.erb",
+		"/X/RoR/ticketee/app/views/admin/states/new.html.erb",
+		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
+		"/X/RoR/ticketee/app/views/admin/base/index.html.erb",
 		"/X/RoR/ticketee/app/helpers/tickets_helper.rb",
 		"/X/RoR/ticketee/app/views/tickets/show.html.erb",
 		"/X/RoR/ticketee/app/controllers/tickets_controller.rb",
 		"/X/RoR/ticketee/app/views/comments/_comment.html.erb",
-		"/X/RoR/ticketee/spec/features/creating_comments_spec.rb",
 		"/X/RoR/ticketee/app/models/comment.rb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/spec/features/creating_comments_spec.rb",
-		"/X/RoR/ticketee/app/views/comments/_form.html.erb",
-		"/X/RoR/ticketee/app/controllers/comments_controller.rb",
 		"/X/RoR/ticketee/spec/factories/state_factory.rb",
 		"/X/RoR/ticketee/spec/features/seeds_spec.rb",
 		"/X/RoR/ticketee/app/views/states/_state.html.erb",
 		"/X/RoR/ticketee/app/models/ticket.rb",
-		"/X/RoR/ticketee/app/models/state.rb",
-		"/X/RoR/ticketee/db/seeds.rb",
 		"/X/RoR/ticketee/db/migrate/20131122104352_create_states.rb",
-		"/X/RoR/ticketee/config/routes.rb",
 		"/X/RoR/ticketee/spec/integration/creating_comments_spec.rb",
 		"/X/RoR/ticketee/app/assets/javascripts/tickets.js.coffee",
 		"/X/RoR/ticketee/spec/features/creating_tickets_spec.rb",
 		"/X/RoR/ticketee/app/views/files/_form.html.erb",
 		"/X/RoR/ticketee/app/views/tickets/_form.html.erb",
-		"/X/RoR/ticketee/spec/support/capybara_helpers.rb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/spec/features/creating_tickets_spec.rb",
 		"/X/RoR/ticketee/app/controllers/files_controller.rb",
-		"/X/RoR/ticketee/app/views/layouts/application.html.erb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/views/tickets/_form.html.erb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/views/files/_form.html.erb",
 		"/C/Users/Default.DEV-Lap-011/Downloads/ticketee-master/ticketee-master/app/assets/javascripts/tickets.js.coffee",
@@ -137,8 +163,6 @@
 		"/X/RoR/ticketee/db/migrate/20131118151439_create_assets.rb",
 		"/X/RoR/ticketee/spec/fixtures/spin.txt",
 		"/X/RoR/ticketee/spec/fixtures/speed.txt",
-		"/X/RoR/ticketee/app/helpers/admin/permissions_helper.rb",
-		"/X/RoR/ticketee/spec/features/admin/assigning_permissions_spec.rb",
 		"/X/RoR/ticketee/app/controllers/admin/permissions_controller.rb",
 		"/X/RoR/ticketee/app/controllers/sessions_controller.rb",
 		"/X/RoR/ticketee/spec/support/authentication_helpers.rb",
@@ -176,7 +200,6 @@
 		"/X/RoR/ticketee/spec/factories/user_factory.rb",
 		"/X/RoR/ticketee/spec/features/admin/creating_users_spec.rb",
 		"/X/RoR/ticketee/app/controllers/admin/base_controller.rb",
-		"/X/RoR/ticketee/app/views/admin/base/index.html.erb",
 		"/X/RoR/ticketee/app/views/admin/users/new.html.erb",
 		"/X/RoR/ticketee/app/views/admin/users/_form.html.erb",
 		"/X/RoR/ticketee/spec/controllers/admin/users_controller_spec.rb",
@@ -227,6 +250,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"create tickets",
 			"turbolinks",
 			"You must be an admin",
 			"puts",
@@ -251,52 +275,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/application.html.erb",
+					"file": "spec/features/creating_comments_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 916,
+						"buffer_size": 1806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								372,
-								372
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 747,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								718,
-								718
+								285,
+								241
 							]
 						],
 						"settings":
@@ -306,7 +302,90 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 25.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "spec/factories/state_factory.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/factories/project_factory.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/features/admin/assigning_permissions_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1868,
+								1868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 597.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -373,7 +452,7 @@
 	},
 	"select_symbol":
 	{
-		"height": 360.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],

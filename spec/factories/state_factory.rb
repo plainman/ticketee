@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :state do
-    name "A name"
+    name "Open"
+    default true
   end
 end
