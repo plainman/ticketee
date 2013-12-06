@@ -1,9 +1,14 @@
 Chapter 11.1
-- extend ticket_params instead of attr_accessible lieke this
+- extend ticket_params instead of attr_accessible like this
   def ticket_params
     params.require(:ticket).permit(:title, :description, :tag_names, assets_attributes: [:asset])
   end
-- typo in test scenario, use "Tag names" instead of "Tags":
-  fill_in "Tag names", :with => "browser visual"
+- rename input field "Tag names" to "Tags":
+  <%= f.label :tag_names, "Tags" %>
 - use non-deprecated method in ticket model "associate_tags"-method:
   self.tags << Tag.find_or_create_by(name: name)
+Chapter 11.2
+- again: use comments_params instead of attr_accessible
+  params.require(:comment).permit(:text, :state_id, :tag_names)
+- again: use "find_or_create_by" in "associate_tags_with_ticket"-method
+  Tag.find_or_create_by(name: name)

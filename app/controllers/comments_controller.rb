@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
     if cannot?(:"change states", @ticket.project)
       params[:comment].delete(:state_id)
     end
-    params.require(:comment).permit(:text, :state_id)
+    params.require(:comment).permit(:text, :tag_names, :state_id)
   end
 
 end
